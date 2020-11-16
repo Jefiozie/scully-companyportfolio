@@ -15,5 +15,9 @@ export class UserComponent {
   lastName: string;
   @Input()
   largePicture: string;
+  @Input()
+  country: string;
+  @Input()
+  city: string;
 
 }

@@ -1,5 +1,10 @@
-<h1>Users</h1>
-<ng-container *ngFor="let user of users$ | async">
-
-  <app-user [firstName]="user.name.first" [lastName]="user.name.last" [largePicture]="user.picture.large"></app-user>
-</ng-container>
+<div class="grid grid-cols-4 bg-gray-500 justify-items-auto h-auto">
+  <ng-container *ngFor="let user of users$ | async">
+    <div class="text-gray-700 flex justify-center items-center px-2 py-2">
+      <app-user [firstName]="user.name.first" [lastName]="user.name.last" [country]="user.location.country" [city]="user.location.city" [largePicture]="user.picture.large" lazy-load>
+      </app-user>
+      
+      
+    </div>
+  </ng-container>
+</div>
