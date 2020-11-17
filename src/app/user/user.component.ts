@@ -1,14 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  styleUrls: ['./user.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+
 })
 export class UserComponent {
-
-  constructor() { }
-
   @Input()
   firstName: string;
   @Input()
@@ -16,8 +15,8 @@ export class UserComponent {
   @Input()
   largePicture: string;
   @Input()
-  country: string;
-  @Input()
   city: string;
+  @Input()
+  country: string;
 
 }

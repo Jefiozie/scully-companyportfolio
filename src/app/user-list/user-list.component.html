@@ -1,0 +1,7 @@
+<div class="grid grid-cols-4 bg-gray-500 justify-items-auto h-auto">
+    <div class=" text-gray-700 flex justify-center items-center px-2 py-2" *ngFor="let user of users">
+        <app-user [firstName]="user.name.first" [lastName]="user.name.last" [country]="user.location.country"
+            [city]="user.location.city" [largePicture]="user.picture.large" lazy-load>
+        </app-user>
+    </div>
+</div>

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { UserComponent } from './user/user.component';
 import { LazyImageDirective } from './lazy-image.directive';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    LazyImageDirective
+    LazyImageDirective,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
