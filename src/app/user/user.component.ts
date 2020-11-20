@@ -8,15 +8,10 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 })
 export class UserComponent {
-  @Input()
-  firstName: string;
-  @Input()
-  lastName: string;
-  @Input()
-  largePicture: string;
-  @Input()
-  city: string;
-  @Input()
-  country: string;
+  @Input() firstName: string;
+  @Input() lastName: string;
+  @Input() largePicture: string;
+  @Input() city: string;
+  @Input() country: string;
 
 }

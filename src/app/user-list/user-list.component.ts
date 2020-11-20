@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Result } from '../uers.types';
+import { Result } from '../users.types';
 
 @Component({
   selector: 'app-user-list',
@@ -9,5 +9,4 @@ import { Result } from '../uers.types';
 })
 export class UserListComponent {
   @Input() users: Result[];
-
 }
